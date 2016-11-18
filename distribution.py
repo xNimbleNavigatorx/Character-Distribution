@@ -39,4 +39,7 @@ Notice about this example:
 
 s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + s + '" is:')
-
+print("a"*(s.count('a')))
+print("b"*(s.count('b')))
+print("c"*(s.count('c')))
+print("a)))
