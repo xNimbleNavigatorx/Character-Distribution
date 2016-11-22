@@ -65,3 +65,4 @@ print("w"*(s.count('w')))
 print("x"*(s.count('x')))
 print("y"*(s.count('y')))
 print("z"*(s.count('z')))
+sort.list
