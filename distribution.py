@@ -39,30 +39,11 @@ Notice about this example:
 
 s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + s + '" is:')
-print("a"*(s.count('a')))
-print("b"*(s.count('b')))
-print("c"*(s.count('c')))
-print("d"*(s.count('d')))
-print("e"*(s.count('e')))
-print("f"*(s.count('f')))
-print("g"*(s.count('g')))
-print("h"*(s.count('h')))
-print("i"*(s.count('i')))
-print("j"*(s.count('j')))
-print("k"*(s.count('k')))
-print("l"*(s.count('l')))
-print("m"*(s.count('m')))
-print("n"*(s.count('n')))
-print("o"*(s.count('o')))
-print("p"*(s.count('p')))
-print("q"*(s.count('q')))
-print("r"*(s.count('r')))
-print("s"*(s.count('s')))
-print("t"*(s.count('t')))
-print("u"*(s.count('u')))
-print("v"*(s.count('v')))
-print("w"*(s.count('w')))
-print("x"*(s.count('x')))
-print("y"*(s.count('y')))
-print("z"*(s.count('z')))
-sort.list
+
+f = [s.count("a"), s.count("b"), s.count("c"), s.count("d"), s.count("e"), s.count("f"), s.count("g"), s.count("h"), s.count("i"), s.count("j"), s.count("k"), s.count("l"), s.count("m"), s.count("n"), s.count("o"), s.count("p"), s.count("q"), s.count("r"), s.count("s"), s.count("t"), s.count("u"), s.count("v"), s.count("w"), s.count("x"), s.count("y"), s.count("z")]
+combo = zip( f ,['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
+print(combo)
+
+list.sort()
+(list[::-1])
+
