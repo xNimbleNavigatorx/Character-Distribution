@@ -43,10 +43,20 @@ s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + s + '" is:')
 
 f = [s.count("a"), s.count("b"), s.count("c"), s.count("d"), s.count("e"), s.count("f"), s.count("g"), s.count("h"), s.count("i"), s.count("j"), s.count("k"), s.count("l"), s.count("m"), s.count("n"), s.count("o"), s.count("p"), s.count("q"), s.count("r"), s.count("s"), s.count("t"), s.count("u"), s.count("v"), s.count("w"), s.count("x"), s.count("y"), s.count("z")]
-combo = zip( f ,['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
+combo = list(zip( f ,string.ascii_lowercase))
+
+
 for x, y in combo:
-    y.sort( )
-    print(x*y)
+    combo.sort(reverse = True)
+
+
+print(combo)
+
+for x, y in combo:
+    if x > 0:
+        print(x*y)
+    
+
 
 list.sort()
 (list[::-1])
