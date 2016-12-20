@@ -53,8 +53,10 @@ for x, y in combo:
 print(combo)
 
 for x, y in combo:
-    if x > 0:
+    count = int(combo[0][0])
+    while count > 0:
         print(x*y)
+    count -= 1
     
 
 
