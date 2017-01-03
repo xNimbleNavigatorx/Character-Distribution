@@ -39,6 +39,9 @@ Notice about this example:
 import string
 print(string.ascii_lowercase)
 
+from operator import itemgetter
+
+
 s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + s + '" is:')
 
@@ -52,12 +55,22 @@ for x, y in combo:
 
 print(combo)
 
-for x, y in combo:
-    count = int(combo[0][0])
-    while count > 0:
-        print(x*y)
-    count -= 1
-    
+final_list = []
+b=0
+while b < len(combo) and combo[b][0]!= 0:
+        sublist = [combo[b]]
+        count = combo[b][0]
+        while combo[b+1][0] == count:
+            b = b+1
+            sublist.append(combo[b])
+        sorted_sub = sorted(sublist, key=itemgetter(1))
+        final_list = final_list + sorted_sub
+        b = b+1
+        print(sorted_sub)
+        
+for x, y in final_list:
+    print(x*y)
+
 
 
 list.sort()
