@@ -55,7 +55,8 @@ for x, y in combo:
 
 print(combo)
 
-final_list = []
+finallist = []
+
 b=0
 while b < len(combo) and combo[b][0]!= 0:
         sublist = [combo[b]]
@@ -63,16 +64,13 @@ while b < len(combo) and combo[b][0]!= 0:
         while combo[b+1][0] == count:
             b = b+1
             sublist.append(combo[b])
-        sorted_sub = sorted(sublist, key=itemgetter(1))
-        final_list = final_list + sorted_sub
+        sortlist = sorted(sublist, key=itemgetter(1))
+        finallist = finallist + sortlist
         b = b+1
-        print(sorted_sub)
+        print(sortlist)
         
-for x, y in final_list:
+for x, y in finallist:
     print(x*y)
 
 
-
-list.sort()
-(list[::-1])
 
