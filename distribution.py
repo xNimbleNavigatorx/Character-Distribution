@@ -46,6 +46,7 @@ s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "' + s + '" is:')
 
 f = [s.count("a"), s.count("b"), s.count("c"), s.count("d"), s.count("e"), s.count("f"), s.count("g"), s.count("h"), s.count("i"), s.count("j"), s.count("k"), s.count("l"), s.count("m"), s.count("n"), s.count("o"), s.count("p"), s.count("q"), s.count("r"), s.count("s"), s.count("t"), s.count("u"), s.count("v"), s.count("w"), s.count("x"), s.count("y"), s.count("z")]
+g = [s.count("A"), s.count("B"), s.count("C"), s.count("D"), s.count("e"), s.count("f"), s.count("g"), s.count("h"), s.count("i"), s.count("j"), s.count("k"), s.count("l"), s.count("m"), s.count("n"), s.count("o"), s.count("p"), s.count("q"), s.count("r"), s.count("s"), s.count("t"), s.count("u"), s.count("v"), s.count("w"), s.count("x"), s.count("y"), s.count("z")]
 combo = list(zip( f ,string.ascii_lowercase))
 
 
@@ -72,5 +73,5 @@ while b < len(combo) and combo[b][0]!= 0:
 for x, y in finallist:
     print(x*y)
 
-
+print(string.ascii_uppercase)
 
